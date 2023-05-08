@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fc23174d-9cde-4561-b01b-65ac0aa67f5c" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_3/Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/Task_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/hobbyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/input.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/input.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2PW6GVqcUFZdNVKfaM10nNTTVww" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,9 +53,29 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="hobbyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_5.hobbyList" />
+      <module name="AT_TASKS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.hobbyList" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
