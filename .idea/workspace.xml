@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc23174d-9cde-4561-b01b-65ac0aa67f5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_3/Task_3.java" afterDir="false" />
@@ -12,6 +13,9 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/StreamTask.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/XmlPrase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_6/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_6/HibernateMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_6/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/Task_5.java" beforeDir="false" />
@@ -57,6 +61,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -65,10 +70,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Task_6" />
       <recent name="Task_5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamTask">
+  <component name="RunManager" selected="Application.HibernateMain">
+    <configuration name="HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_6.HibernateMain" />
+      <module name="AT_TASKS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JSONPrase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task_5.JSONPrase" />
       <module name="AT_TASKS" />
@@ -123,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HibernateMain" />
         <item itemvalue="Application.StreamTask" />
         <item itemvalue="Application.JSONPrase" />
         <item itemvalue="Application.XmlPrase" />
