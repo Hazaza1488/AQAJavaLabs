@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc23174d-9cde-4561-b01b-65ac0aa67f5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/input.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Task_3/Task_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/Task_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/hobbyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/JSONPrase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/StreamTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_5/XmlPrase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/Task_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/hobbyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/input.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/input.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task_5/output.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +63,51 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Task_5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StreamTask">
+    <configuration name="JSONPrase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_5.JSONPrase" />
+      <module name="AT_TASKS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_5.StreamTask" />
+      <module name="AT_TASKS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XmlPrase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task_5.XmlPrase" />
+      <module name="AT_TASKS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="hobbyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task_5.hobbyList" />
       <module name="AT_TASKS" />
@@ -72,6 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamTask" />
+        <item itemvalue="Application.JSONPrase" />
+        <item itemvalue="Application.XmlPrase" />
         <item itemvalue="Application.hobbyList" />
       </list>
     </recent_temporary>

@@ -1,0 +1,9 @@
+<User>
+    <id>123</id>
+    <name>Yuri</name>
+    <hobbies>
+        <hobbies>reading</hobbies>
+        <hobbies>hiking</hobbies>
+        <hobbies>cooking</hobbies>
+    </hobbies>
+</User>
