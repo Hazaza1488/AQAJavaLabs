@@ -1,5 +1,8 @@
 package Task_6;
 
+import Task_6.Entity.Device;
+import Task_6.Entity.Phone;
+import Task_6.Entity.SocialMedia;
 import Task_6.Entity.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -27,6 +30,9 @@ public class HibernateUtil  {
                 configuration.setProperties(hibernateProps);
 
                 configuration.addAnnotatedClass(User.class);
+                configuration.addAnnotatedClass(Phone.class);
+                configuration.addAnnotatedClass(Device.class);
+                configuration.addAnnotatedClass(SocialMedia.class);
                 // Build the ServiceRegistry and create the SessionFactory
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
