@@ -1,67 +1,82 @@
-package Task_3;
-
 import java.util.*;
 
-public class Task_3 {
+public class ArrayIntersection {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
-
-        // Prompt user to enter the size and elements of first array
-        System.out.print("Enter the size of the first array: ");
-        int size1 = input.nextInt();
-        int[] arr1 = new int[size1];
-        System.out.print("Enter the elements of the first array: ");
+        // User enter info 1 array
+        System.out.print("Size of the 1 array: ");
+        int size1 = scanner.nextInt();
+        int[] array1 = new int[size1];
+        System.out.print("Elements of the 1 array: ");
         for (int i = 0; i < size1; i++) {
-            arr1[i] = input.nextInt();
+            array1[i] = scanner.nextInt();
         }
 
-        // Prompt user to enter the size and elements of second array
-        System.out.print("Enter the size of the second array: ");
-        int size2 = input.nextInt();
-        int[] arr2 = new int[size2];
-        System.out.print("Enter the elements of the second array: ");
+        // User enter info 2 array
+        System.out.print("Enter the size of the 2 array: ");
+        int size2 = scanner.nextInt();
+        int[] array2 = new int[size2];
+        System.out.print("Enter the elements of the 2 array: ");
         for (int i = 0; i < size2; i++) {
-            arr2[i] = input.nextInt();
+            array2[i] = scanner.nextInt();
         }
 
-        // Find the intersection of the two arrays
+        // Intersection
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();
-        for (int i : arr1) {
-            set1.add(i);
+        for (int num : array1) {
+            set1.add(num);
         }
-        for (int i : arr2) {
-            set2.add(i);
+        for (int num : array2) {
+            if (set1.contains(num)) {
+                set2.add(num);
+            }
         }
-        set1.retainAll(set2);
-        int[] result = new int[set1.size()];
-        int index = 0;
-        for (int i : set1) {
-            result[index++] = i;
-        }
-
-        // Create a HashMap from the result array
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i : result) {
-            map.put(i, i*2);
+        int[] intersection = new int[set2.size()];
+        int i = 0;
+        for (int num : set2) {
+            intersection[i++] = num;
         }
 
-        // Perform HashMap operations
-        map.put(10, 20);
-        map.remove(5);
-        System.out.println(map.containsKey(3));
-        System.out.println(map.get(4));
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        // Print intersection
+        System.out.println("Intersection: " + Arrays.toString(intersection));
+
+        // Convert to linkedlist
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int num : intersection) {
+            list.add(num);
         }
 
-        // Catch NumberFormatException and display explanation
+
+        list.addFirst(0);
+        System.out.println("List after adding an element to the beginning: " + list);
+
+
+        list.addLast(10);
+        System.out.println("List after adding an element to the end: " + list);
+
+
+        list.removeFirst();
+        System.out.println("List after removing the first element: " + list);
+
+
+        list.removeLast();
+        System.out.println("List after removing the last element: " + list);
+
+
+        ListIterator<Integer> iterator = list.listIterator(list.size());
+        System.out.print("List in reverse order: ");
+        while (iterator.hasPrevious()) {
+            System.out.print(iterator.previous() + " ");
+        }
+
+        // Catch ArithmeticException
         try {
-            String str = "abc";
-            int num = Integer.parseInt(str);
-        } catch (NumberFormatException e) {
-            System.out.println("NumberFormatException occurred: " + e.getMessage());
+            int result = 1 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("\nArithmeticException caught: " + e.getMessage());
+            System.out.println("You cannot divide by zero.");
         }
     }
 }
