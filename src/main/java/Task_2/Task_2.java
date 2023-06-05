@@ -1,20 +1,12 @@
-package Task_2;
+public class CompareNumbers {
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 20;
 
-public class Task_2 {
-    public  static  void main(String[] arrs){
-        int[] myArray = {2, 5, 7, 9, 8};
-
-        System.out.println("Elements of the array:");
-        for(int i = 0; i < myArray.length; i++) {
-            System.out.print(myArray[i] + " ");
+        if(num1 > num2) {
+            System.out.println(num1 + " is greater than " + num2);
+        } else {
+            System.out.println(num2 + " is greater than " + num1);
         }
-        int sum = 0;
-        for(int i = 0; i < myArray.length; i++) {
-            sum += myArray[i];
-        }
-        System.out.println("\nSum of the elements: " + sum);
-
-
-
     }
 }
