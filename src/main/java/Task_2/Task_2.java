@@ -2,7 +2,7 @@ package Task_2;
 
 public class Task_2 {
     public  static  void main(String[] arrs){
-        int[] myArray = {2, 5, 7, 9, 1};
+        int[] myArray = {2, 5, 7, 9, 8};
 
         System.out.println("Elements of the array:");
         for(int i = 0; i < myArray.length; i++) {

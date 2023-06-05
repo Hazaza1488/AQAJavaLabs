@@ -14,7 +14,7 @@ import static Task_6.HibernateUtil.getSessionFactory;
 
 public class Hibernate7 {
     public static void main(String[] args) {
-        User user = new User(19, "Yuri");
+        User user = new User(19, "Yura");
 
         Session session = getSessionFactory().getCurrentSession();
         session.beginTransaction();
