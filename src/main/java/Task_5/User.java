@@ -7,16 +7,23 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
-public class User implements Serializable, Comparable {
+public class User implements Serializable, Comparable<User> {
 
-
+    @JsonProperty("id")
     private int id;
-    private String name;
-    private List<String> hobbies;
 
+    @JsonProperty("name")
+    private String name;
+
+    @JsonProperty("hobbies")
+    private List<String> hobbies;
 
     @JsonIgnore
     private String uuid = UUID.randomUUID().toString();
+
+    public User() {
+
+    }
 
     public String getUuid() {
         return uuid;
@@ -24,10 +31,6 @@ public class User implements Serializable, Comparable {
 
     public void setUuid(String uuid) {
         this.uuid = uuid;
-    }
-
-    public User(){
-
     }
 
     public int getId() {
@@ -65,10 +68,7 @@ public class User implements Serializable, Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        User o1 = (User)this;
-        User o2 = (User)o;
-
-        return o1.name.compareTo(o2.getName());
+    public int compareTo(User otherUser) {
+        return this.name.compareTo(otherUser.getName());
     }
 }
