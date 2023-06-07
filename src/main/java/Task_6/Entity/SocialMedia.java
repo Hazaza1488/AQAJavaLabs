@@ -1,10 +1,7 @@
 package Task_6.Entity;
 
-
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -19,13 +16,15 @@ public class SocialMedia implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "name")
     private String name;
 
-
-
-    @ManyToMany(mappedBy =  "socialMedia", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "socialMedia", fetch = FetchType.LAZY)
     private List<User> users;
+
+    public SocialMedia() {
+        // Empty constructor
+    }
 
     public SocialMedia(String name) {
         this.name = name;
