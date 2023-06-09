@@ -12,10 +12,16 @@ import org.hibernate.service.ServiceRegistry;
 
 import java.util.Properties;
 
-public class HibernateUtil  {
-        private static final SessionFactory sessionFactory = buildSessionFactory();
-        private static SessionFactory buildSessionFactory() {
-            try {// Create properties for Hibernate configuration
+public class HibernateUtil {
+    private static SessionFactory sessionFactory;
+
+    private HibernateUtil() {
+    }
+
+    public static synchronized SessionFactory getSessionFactory() {
+        if (sessionFactory == null) {
+            try {
+                // Create properties for Hibernate configuration
                 Properties hibernateProps = new Properties();
                 hibernateProps.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
                 hibernateProps.put(Environment.URL, "jdbc:mysql://localhost:3306/a_t_java");
@@ -25,6 +31,7 @@ public class HibernateUtil  {
                 hibernateProps.put(Environment.SHOW_SQL, "true");
                 hibernateProps.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
                 hibernateProps.put(Environment.HBM2DDL_AUTO, "create");
+
                 // Build the configuration object and register entity classes
                 Configuration configuration = new Configuration();
                 configuration.setProperties(hibernateProps);
@@ -33,17 +40,17 @@ public class HibernateUtil  {
                 configuration.addAnnotatedClass(Phone.class);
                 configuration.addAnnotatedClass(Device.class);
                 configuration.addAnnotatedClass(SocialMedia.class);
+
                 // Build the ServiceRegistry and create the SessionFactory
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
-                return configuration.buildSessionFactory(serviceRegistry);
+                sessionFactory = configuration.buildSessionFactory(serviceRegistry);
             } catch (Throwable ex) {
                 // Make sure you log the exception, as it might be swallowed
                 System.err.println("Initial SessionFactory creation failed." + ex);
                 throw new ExceptionInInitializerError(ex);
-            }}
-        public static SessionFactory getSessionFactory() {
-            return sessionFactory;
+            }
         }
+        return sessionFactory;
+    }
 }
-
