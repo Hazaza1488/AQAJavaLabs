@@ -30,7 +30,7 @@ public class SeleniumStart {
         WebElement form = driver.findElement(By.xpath("//*[@id=\"prev2\"]"));
         navItem.click();
 
-        WebElement form = driver.findElement(By.xpath("//*[@id=\"prev2\"]"));
+        form = driver.findElement(By.xpath("//*[@id=\"prev2\"]"));
         navItem.click();
 
         driver.close();
