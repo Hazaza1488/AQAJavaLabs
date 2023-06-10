@@ -1,1 +1,1 @@
-<User><id>123</id><name>Yuri</name><hobbies><hobbies>reading</hobbies><hobbies>hiking</hobbies><hobbies>cooking</hobbies><hobbies>riding</hobbies></hobbies></User>
+<User><id>123</id><name>Yuri</name><sports><sports>reading</sports><sports>hiking</sports><sports>cooking</sports><sports>riding</sports></sports></User>

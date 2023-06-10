@@ -13,8 +13,8 @@ public class XmlParse {
     public static void main(String[] args) throws IOException {
         User user = new User();
         user.setId(123);
-        user.setName("Yurii");
-        user.setHobbies(Arrays.asList("apple", "banana", "orange"));
+        user.setName("Yuriy");
+        user.setFruits(Arrays.asList("apple", "banana", "orange"));
 
         System.out.println(user);
 
@@ -25,8 +25,8 @@ public class XmlParse {
         User inputXmlUser = xmlMapper.readValue(new File("input.xml"), User.class);
         System.out.println("inputXmlUser: " + inputXmlUser);
 
-        List<String> hobbies = inputXmlUser.getHobbies();
-        hobbies.add("riding");
+        List<String> fruits = inputXmlUser.getFruits();
+        fruits.add("apple");
         xmlMapper.writeValue(new File("output.xml"), inputXmlUser);
         System.out.println("updated inputXmlUser: " + inputXmlUser);
     }

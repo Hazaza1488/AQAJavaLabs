@@ -15,8 +15,8 @@ public class User implements Serializable, Comparable<User> {
     @JsonProperty("name")
     private String name;
 
-    @JsonProperty("hobbies")
-    private List<String> hobbies;
+    @JsonProperty("fruits")
+    private List<String> fruits;
 
     @JsonIgnore
     private String uuid = UUID.randomUUID().toString();
@@ -49,12 +49,12 @@ public class User implements Serializable, Comparable<User> {
         this.name = name;
     }
 
-    public List<String> getHobbies() {
-        return hobbies;
+    public List<String> getFruits() {
+        return fruits;
     }
 
-    public void setHobbies(List<String> hobbies) {
-        this.hobbies = hobbies;
+    public void setFruits(List<String> fruits) {
+        this.fruits(); = fruits;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class User implements Serializable, Comparable<User> {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", hobbies=" + hobbies +
+                ", fruits=" + fruits +
                 ", uuid='" + uuid + '\'' +
                 '}';
     }
