@@ -1,4 +1,4 @@
-package org.example.task_10;
+package Task_10;
 
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.By;
