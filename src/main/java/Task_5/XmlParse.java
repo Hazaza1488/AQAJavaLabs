@@ -1,6 +1,5 @@
 package Task_5;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import java.io.File;
@@ -27,6 +26,7 @@ public class XmlParse {
 
         List<String> fruits = inputXmlUser.getFruits();
         fruits.add("apple");
+
         xmlMapper.writeValue(new File("output.xml"), inputXmlUser);
         System.out.println("updated inputXmlUser: " + inputXmlUser);
     }

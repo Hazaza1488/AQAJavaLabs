@@ -19,10 +19,10 @@ public class User implements Serializable, Comparable<User> {
     private List<String> fruits;
 
     @JsonIgnore
-    private String uuid = UUID.randomUUID().toString();
+    private String uuid;
 
     public User() {
-
+        setUuid(UUID.randomUUID().toString());
     }
 
     public String getUuid() {
@@ -54,7 +54,7 @@ public class User implements Serializable, Comparable<User> {
     }
 
     public void setFruits(List<String> fruits) {
-        this.fruits(); = fruits;
+        this.fruits = fruits;
     }
 
     @Override

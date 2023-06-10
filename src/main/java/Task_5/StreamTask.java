@@ -13,21 +13,38 @@ public class StreamTask {
         List<User> userList = generateUserList(10);
         System.out.println(userList);
 
-        System.out.println(userList.stream().sorted().collect(Collectors.toList()));
-        System.out.println(userList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
-        System.out.println(userList.stream().sorted(Comparator.comparing(User::getId)).collect(Collectors.toList()));
+        List<User> sortedList = userList.stream()
+                .sorted()
+                .collect(Collectors.toList());
+        System.out.println(sortedList);
 
-        System.out.println("filter");
-        System.out.println(userList.stream().filter(u -> u.getId() > 4).collect(Collectors.toList()));
+        List<User> reverseSortedList = userList.stream()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+        System.out.println(reverseSortedList);
 
-        System.out.println("stringList");
-        System.out.println(userList.stream().map(User::getName).collect(Collectors.toList()));
+        List<User> idSortedList = userList.stream()
+                .sorted(Comparator.comparing(User::getId))
+                .collect(Collectors.toList());
+        System.out.println(idSortedList);
+
+        System.out.println("Filter:");
+        List<User> filteredList = userList.stream()
+                .filter(u -> u.getId() > 4)
+                .collect(Collectors.toList());
+        System.out.println(filteredList);
+
+        System.out.println("Name List:");
+        List<String> nameList = userList.stream()
+                .map(User::getName)
+                .collect(Collectors.toList());
+        System.out.println(nameList);
     }
 
     private static List<User> generateUserList(int n) {
         Random random = new Random();
         List<User> userList = new ArrayList<>();
-        IntStream.range(1, n).forEach(i -> {
+        IntStream.range(0, n).forEach(i -> {
             User user = new User();
             user.setName("userName" + UUID.randomUUID().toString().substring(0, 5));
             user.setId(random.nextInt(100));

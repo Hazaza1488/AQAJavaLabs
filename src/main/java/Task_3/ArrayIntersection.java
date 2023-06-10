@@ -1,3 +1,5 @@
+package Task_3;
+
 import java.util.*;
 
 public class ArrayIntersection {

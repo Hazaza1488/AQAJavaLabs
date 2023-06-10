@@ -1,3 +1,5 @@
+package Task_2;
+
 public class CompareNumbers {
     public static void main(String[] args) {
         int num1 = 10;
