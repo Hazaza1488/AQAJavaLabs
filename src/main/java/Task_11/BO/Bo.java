@@ -40,7 +40,7 @@ public class BO {
 
 
     public BO addProductToCollection() throws InterruptedException {
-        homePage.open().openProductPage();
+        homePage.open().openLoginPage();
         if (!productPage.isOpen()) Thread.sleep(1000);
         Assert.assertTrue(productPage.isOpen());
         productPage.addProductToCollection();
