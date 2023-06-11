@@ -1,4 +1,4 @@
-package org.example.Task_11.po;
+package Task_11.PO;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

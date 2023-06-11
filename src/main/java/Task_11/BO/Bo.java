@@ -1,11 +1,11 @@
-package org.example.task_11.bo;
+package Task_11.BO;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.example.Task_11.po.ProductPage;
-import org.example.Task_11.po.HomePage;
-import org.example.Task_11.po.LoginPage;
-import org.example.Task_11.po.ProfilePage;
+import Task_11.PO.ProductPage;
+import Task_11.PO.HomePage;
+import Task_11.PO.LoginPage;
+import Task_11.PO.ProfilePage;
 
 public class BO {
     private WebDriver driver;

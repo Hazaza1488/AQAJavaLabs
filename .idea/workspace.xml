@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc23174d-9cde-4561-b01b-65ac0aa67f5c" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/src/main/Task11/BO/Bo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Task11/BO/Bo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_13/ExecutionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_13/SuiteListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task_13/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Task11/BO/Bo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_11/BO/Bo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Task11/PO/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_11/PO/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Task11/PO/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_11/PO/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Task11/PO/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_11/PO/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Task11/PO/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task_11/PO/ProfilePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +64,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleks\Desktop\Laba\src\main\java\Task_133" />
+      <recent name="C:\Users\Aleks\Desktop\Laba\src\main\java" />
       <recent name="C:\Users\Aleks\Desktop\Laba\src\main\Task11\BO" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -150,7 +161,7 @@
       <updated>1683560397317</updated>
       <workItem from="1686397491715" duration="2800000" />
       <workItem from="1686400322205" duration="61000" />
-      <workItem from="1686508186484" duration="3391000" />
+      <workItem from="1686508186484" duration="4998000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1686399226698</created>
@@ -180,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686511466960</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1686511585909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686511585909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
