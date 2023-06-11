@@ -21,6 +21,6 @@ public class ExecutionListener implements IInvokedMethodListener, IExecutionList
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-        LOGGER.info("After invocation of method: " + method.getTestMethod().getMethodName());
+        LOGGER.info("After invocation: " + method.getTestMethod().getMethodName());
     }
 }

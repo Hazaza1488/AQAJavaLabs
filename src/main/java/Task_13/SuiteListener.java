@@ -10,11 +10,11 @@ public class SuiteListener implements IInvokedMethodListener {
 
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-        LOGGER.info("Before invocation of method: " + method.getTestMethod().getMethodName());
+        LOGGER.info("Before invocation: " + method.getTestMethod().getMethodName());
     }
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-        LOGGER.info("After invocation of method: " + method.getTestMethod().getMethodName());
+        LOGGER.info("After invocation: " + method.getTestMethod().getMethodName());
     }
 }
