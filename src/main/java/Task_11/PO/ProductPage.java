@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ProductPage {
     private WebDriver driver;
 
-    public static final String URL = "";
-
     public ProductPage(WebDriver driver) {
         this.driver = driver;
     }
