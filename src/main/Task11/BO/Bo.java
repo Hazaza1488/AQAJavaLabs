@@ -7,7 +7,7 @@ import org.example.Task_11.po.HomePage;
 import org.example.Task_11.po.LoginPage;
 import org.example.Task_11.po.ProfilePage;
 
-public class DemoqaBO {
+public class BO {
     private WebDriver driver;
     private HomePage homePage;
     private LoginPage loginPage;
@@ -18,7 +18,7 @@ public class DemoqaBO {
     private static final String PASSWORD = "user1234";
 
 
-    public DemoqaBO(WebDriver driver) {
+    public BO(WebDriver driver) {
         this.driver = driver;
         this.homePage = new HomePage(driver);
         this.loginPage = new LoginPage(driver);
@@ -26,7 +26,7 @@ public class DemoqaBO {
         this.profilePage = new ProfilePage(driver);
     }
 
-    public DemoqaBO login() throws InterruptedException {
+    public BO login() throws InterruptedException {
         homePage.openLoginPage();
         Assert.assertTrue(loginPage.isOpen());
 
@@ -39,7 +39,7 @@ public class DemoqaBO {
     }
 
 
-    public DemoqaBO addProductToCollection() throws InterruptedException {
+    public BO addProductToCollection() throws InterruptedException {
         homePage.open().openProductPage();
         if (!productPage.isOpen()) Thread.sleep(1000);
         Assert.assertTrue(productPage.isOpen());
